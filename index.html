@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<title>春日影 · MyGO!!!!!</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============ SVG 图标精灵 ============ -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.6 5.05c0-1.06 1.17-1.7 2.05-1.12l9.2 6.02a1.9 1.9 0 0 1 0 3.18l-9.2 6.02c-.88.57-2.05-.07-2.05-1.13V5.05Z" fill="currentColor"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4.5" width="4.1" height="15" rx="1.5" fill="currentColor"/><rect x="13.9" y="4.5" width="4.1" height="15" rx="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><rect x="4.6" y="5" width="2.4" height="14" rx="1.2" fill="currentColor"/><path d="M20 6.3v11.4c0 1.02-1.14 1.64-1.99 1.07l-8.3-5.7a1.28 1.28 0 0 1 0-2.14l8.3-5.7c.85-.57 1.99.05 1.99 1.07Z" fill="currentColor"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><rect x="17" y="5" width="2.4" height="14" rx="1.2" fill="currentColor"/><path d="M4 6.3v11.4c0 1.02 1.14 1.64 1.99 1.07l8.3-5.7a1.28 1.28 0 0 0 0-2.14l-8.3-5.7C5.14 4.66 4 5.28 4 6.3Z" fill="currentColor"/></symbol>
+  <symbol id="i-repeat" viewBox="0 0 24 24"><path d="M7 7.5h9.4M16.4 7.5l-2.6-2.6M16.4 7.5l-2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 16.5H7.6M7.6 16.5l2.6-2.6M7.6 16.5l2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-repeat-one" viewBox="0 0 24 24"><path d="M7 7.5h9.4M16.4 7.5l-2.6-2.6M16.4 7.5l-2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 16.5H7.6M7.6 16.5l2.6-2.6M7.6 16.5l2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><text x="12" y="14.2" text-anchor="middle" font-size="7.4" font-weight="700" fill="currentColor" font-family="Segoe UI, sans-serif">1</text></symbol>
+  <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M4 7h3.2c1.3 0 2.5.7 3.2 1.8l3.2 5.4c.7 1.1 1.9 1.8 3.2 1.8H20M17.4 13.4 20 16l-2.6 2.6M4 17h3.2c1.3 0 2.5-.7 3.2-1.8l.8-1.4M13.6 9.3l.8-1.4c.7-1.1 1.9-1.8 3.2-1.8H20M17.4 3.4 20 6l-2.6 2.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.6h2.6L11.3 6c.6-.5 1.5-.1 1.5.7v10.6c0 .8-.9 1.2-1.5.7L6.6 14.4H4a1 1 0 0 1-1-1v-2.8a1 1 0 0 1 1-1Z" fill="currentColor"/><path d="M15.6 9.2a3.9 3.9 0 0 1 0 5.6M18.1 6.7a7.4 7.4 0 0 1 0 10.6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.6h2.6L11.3 6c.6-.5 1.5-.1 1.5.7v10.6c0 .8-.9 1.2-1.5.7L6.6 14.4H4a1 1 0 0 1-1-1v-2.8a1 1 0 0 1 1-1Z" fill="currentColor"/><path d="M16 9.8l4.4 4.4M20.4 9.8 16 14.2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.2s-7.7-4.6-7.7-9.6a4.3 4.3 0 0 1 7.7-2.6 4.3 4.3 0 0 1 7.7 2.6c0 5-7.7 9.6-7.7 9.6Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+  <symbol id="i-heart-fill" viewBox="0 0 24 24"><path d="M12 20.2s-7.7-4.6-7.7-9.6a4.3 4.3 0 0 1 7.7-2.6 4.3 4.3 0 0 1 7.7 2.6c0 5-7.7 9.6-7.7 9.6Z" fill="currentColor"/></symbol>
+  <symbol id="i-more" viewBox="0 0 24 24"><circle cx="6.2" cy="12" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="17.8" cy="12" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="i-min" viewBox="0 0 24 24"><path d="M6.5 12h11" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <symbol id="i-max" viewBox="0 0 24 24"><rect x="7.2" y="7.2" width="9.6" height="9.6" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.3"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M7.6 7.6l8.8 8.8M16.4 7.6l-8.8 8.8" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></symbol>
+  <symbol id="i-note" viewBox="0 0 24 24"><circle cx="8.4" cy="16.2" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="16.8" cy="14.2" r="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.9 16.2V7.6l8.4-1.9v8.5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-lyrics" viewBox="0 0 24 24"><path d="M5 7.4h9M5 12h14M5 16.6h7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-full" viewBox="0 0 24 24"><path d="M9.4 4.8H5.6a.8.8 0 0 0-.8.8v3.8M14.6 4.8h3.8a.8.8 0 0 1 .8.8v3.8M9.4 19.2H5.6a.8.8 0 0 1-.8-.8v-3.8M14.6 19.2h3.8a.8.8 0 0 0 .8-.8v-3.8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  <symbol id="i-blur" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.1" fill="currentColor"/><circle cx="12" cy="12" r="6.1" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.45"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.22"/></symbol>
+  <symbol id="i-restore" viewBox="0 0 24 24"><path d="M7 7h7a3 3 0 0 1 3 3v7M17 17H10a3 3 0 0 1-3-3V7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+</svg>
+
+<!-- ============ 视频背景 ============ -->
+<div class="video-layer" aria-hidden="true">
+  <video id="bgVideo" src="Video/cry.mp4" muted loop playsinline preload="auto"></video>
+  <div class="video-veil"></div>
+</div>
+
+<!-- ============ 应用窗口 ============ -->
+<div class="app" id="app">
+
+  <!-- 标题栏 -->
+  <header class="titlebar" id="titlebar">
+    <div class="tb-left">
+      <div class="app-icon"><svg viewBox="0 0 24 24"><use href="#i-note"/></svg></div>
+      <span class="tb-title" id="tbTitle">春日影</span>
+      <span class="tb-sep"></span>
+      <span class="tb-sub" id="tbSub">MyGO!!!!! · 正在播放</span>
+    </div>
+    <div class="tb-caption">
+      <button class="cap-btn" id="capMin" title="最小化（沉浸模式）" aria-label="最小化"><svg viewBox="0 0 24 24"><use href="#i-min"/></svg></button>
+      <button class="cap-btn" id="capMax" title="全屏" aria-label="全屏"><svg viewBox="0 0 24 24"><use href="#i-max"/></svg></button>
+      <button class="cap-btn close" id="capClose" title="关闭" aria-label="关闭"><svg viewBox="0 0 24 24"><use href="#i-close"/></svg></button>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <!-- 正在播放 -->
+    <section class="now" aria-label="正在播放">
+      <div class="cover-wrap">
+        <div class="cover-glow" id="coverGlow"></div>
+        <div class="cover-box">
+          <img class="cover" src="assets/cover.jpg" alt="《春日影》专辑封面" draggable="false" />
+          <div class="cover-edge"></div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="eyebrow">
+          <span class="eq" id="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          <span>正在播放 · NOW PLAYING</span>
+        </div>
+
+        <h1 class="song-title">春日影</h1>
+        <p class="song-sub">Haruhikage · 春日影 (MyGO!!!!! ver.)</p>
+
+        <div class="facts">
+          <div class="fact">
+            <span class="k">歌手</span>
+            <span class="v">MyGO!!!!!</span>
+          </div>
+          <div class="fact">
+            <span class="k">专辑</span>
+            <span class="v">迷跡波</span>
+          </div>
+          <div class="fact">
+            <span class="k">时长</span>
+            <span class="v" id="factDur">4:12</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn" id="likeBtn" aria-pressed="false">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-heart" id="likeIcon"/></svg>
+            <span>喜欢</span>
+          </button>
+          <button class="btn ghost" id="recenterBtn">
+            <svg viewBox="0 0 24 24" class="ic"><use href="#i-lyrics"/></svg>
+            <span>定位歌词</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 歌词 -->
+    <section class="lyrics card reveal" aria-label="逐词歌词">
+      <div class="lyrics-head">
+        <h2>歌词</h2>
+        <span class="hint">点击歌词可跳转</span>
+        <div class="seg" id="segMode" role="tablist" aria-label="字幕语言">
+          <button class="on" data-mode="zh" role="tab" aria-selected="true">中文</button>
+          <button data-mode="ro" role="tab" aria-selected="false">罗马音</button>
+        </div>
+      </div>
+      <div class="lyrics-viewport" id="lyricsViewport">
+        <div class="lyrics-list" id="lyricsList"></div>
+        <div class="lyrics-empty" id="lyricsEmpty">正在读取歌词…</div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 播放控制栏 -->
+  <footer class="playbar card reveal" id="playbar">
+    <div class="pb-left">
+      <img class="pb-cover" src="assets/cover.jpg" alt="" draggable="false" />
+      <div class="pb-info">
+        <div class="pb-title">春日影</div>
+        <div class="pb-artist">MyGO!!!!! · 迷跡波</div>
+      </div>
+      <button class="icon-btn like" id="likeBtn2" aria-label="喜欢" aria-pressed="false">
+        <svg viewBox="0 0 24 24"><use href="#i-heart" id="likeIcon2"/></svg>
+      </button>
+    </div>
+
+    <div class="pb-center">
+      <div class="transport">
+        <button class="icon-btn sm" id="shuffleBtn" aria-label="随机播放" aria-pressed="false" title="随机播放">
+          <svg viewBox="0 0 24 24"><use href="#i-shuffle"/></svg>
+        </button>
+        <button class="icon-btn" id="prevBtn" aria-label="上一首" title="上一首">
+          <svg viewBox="0 0 24 24"><use href="#i-prev"/></svg>
+        </button>
+        <button class="play-btn" id="playBtn" aria-label="播放" title="播放 / 暂停">
+          <svg viewBox="0 0 24 24" id="playIcon"><use href="#i-play"/></svg>
+        </button>
+        <button class="icon-btn" id="nextBtn" aria-label="下一首" title="下一首">
+          <svg viewBox="0 0 24 24"><use href="#i-next"/></svg>
+        </button>
+        <button class="icon-btn sm on" id="repeatBtn" aria-label="列表循环" title="循环模式：列表循环">
+          <svg viewBox="0 0 24 24" id="repeatIcon"><use href="#i-repeat"/></svg>
+        </button>
+      </div>
+
+      <div class="seek-row">
+        <span class="t" id="curTime">0:00</span>
+        <div class="seek" id="seek" role="slider" tabindex="0" aria-label="播放进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <div class="seek-track">
+            <div class="seek-buffer" id="seekBuffer"></div>
+            <div class="seek-fill" id="seekFill"></div>
+            <div class="seek-thumb" id="seekThumb"></div>
+          </div>
+        </div>
+        <span class="t" id="totTime">4:12</span>
+      </div>
+    </div>
+
+    <div class="pb-right">
+      <button class="icon-btn" id="muteBtn" aria-label="静音" title="静音">
+        <svg viewBox="0 0 24 24" id="volIcon"><use href="#i-volume"/></svg>
+      </button>
+      <div class="vol" id="vol" role="slider" tabindex="0" aria-label="音量" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80">
+        <div class="vol-track">
+          <div class="vol-fill" id="volFill"></div>
+          <div class="vol-thumb" id="volThumb"></div>
+        </div>
+      </div>
+      <span class="pb-divider"></span>
+
+      <div class="blur-wrap">
+        <button class="icon-btn" id="blurBtn" aria-label="模糊度" aria-expanded="false" title="模糊度">
+          <svg viewBox="0 0 24 24"><use href="#i-blur"/></svg>
+        </button>
+        <div class="flyout" id="blurFlyout" role="dialog" aria-label="模糊度" hidden>
+          <div class="flyout-head">
+            <span>模糊</span>
+            <button class="flyout-reset" id="blurReset" type="button">重置</button>
+          </div>
+
+          <div class="ctrl">
+            <div class="ctrl-label">
+              <span>背景视频</span>
+              <span class="flyout-val" id="bgBlurVal">关闭</span>
+            </div>
+            <input class="range" id="blurRange" type="range" min="0" max="24" step="1" value="0" aria-label="背景视频模糊度" />
+          </div>
+
+          <div class="ctrl">
+            <div class="ctrl-label">
+              <span>歌词 / 播放面板</span>
+              <span class="flyout-val" id="panelBlurVal">34 px</span>
+            </div>
+            <input class="range" id="panelRange" type="range" min="0" max="80" step="1" value="34" aria-label="面板模糊度" />
+          </div>
+        </div>
+      </div>
+
+      <button class="icon-btn" id="fsBtn" aria-label="全屏" title="全屏">
+        <svg viewBox="0 0 24 24"><use href="#i-full"/></svg>
+      </button>
+    </div>
+  </footer>
+</div>
+
+<!-- 自动播放被拦截时的提示 -->
+<div class="start-overlay" id="startOverlay" hidden>
+  <button class="start-card" id="startBtn">
+    <span class="start-ic"><svg viewBox="0 0 24 24"><use href="#i-play"/></svg></span>
+    <span class="start-txt">
+      <strong>点击开始播放</strong>
+      <em>浏览器已阻止自动播放音乐</em>
+    </span>
+  </button>
+</div>
+
+<!-- 关闭后的状态 -->
+<div class="closed-screen" id="closedScreen" hidden>
+  <div class="closed-card">
+    <div class="closed-ic"><svg viewBox="0 0 24 24"><use href="#i-note"/></svg></div>
+    <p>窗口已关闭</p>
+    <span class="closed-hint">音乐已暂停，随时可以继续</span>
+    <button class="btn" id="reopenBtn">重新打开</button>
+  </div>
+</div>
+
+<audio id="audio" src="Music/cry.m4a" preload="auto"></audio>
+
+<script src="assets/lyrics-data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
